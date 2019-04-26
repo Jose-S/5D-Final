@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Crayon</title>
+   <style>
+      canvas {
+         border: 1px solid #000000;
+         position: absolute;
+      }
+
+      .container {
+         text-align: center;
+         position: relative;
+         float: left;
+      }
+
+      #canvasBackground {
+         z-index: 1;
+      }
+
+      #canvas {
+         z-index: 2;
+      }
+   </style>
+   <script src="index.js"></script>
+</head>
+
+<body>
+
+   <div class="container">
+      <h3>Use arrow keys to walk!!!</h3>
+      <canvas id="canvasBackground" width="500" height="500"></canvas>
+      <canvas id="canvas" width="500" height="500"></canvas>
+   </div>
+
+   <img id="crayon" src="assets/crayon-sprite.png" style="display:none">
+</body>
+
+</html>
